@@ -1,0 +1,10 @@
+function howLong(year, month, day) {
+   var today = new Date()
+  var years = Math.abs(today.getFullYear()-year)
+  var months = Math.abs(today.getMonth()-month);
+  var days = Math.abs(today.getDay()-day);
+  return years+" years "+months+" months "+days+" days";
+  
+  }
+
+console.log(howLong(2015, 3, 6));

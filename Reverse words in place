@@ -1,0 +1,9 @@
+var words = "This is fun, hopefully.";
+var ar = words.split(/\b/);
+var str = ar.toString();
+var wordsReverser = ar.map(function(word){
+  return word.split('').reverse().join('');
+  
+ });
+console.log(ar);
+console.log(wordsReverser.join(""));

@@ -1,0 +1,23 @@
+var text = prompt("Please enter a text");
+var words = text.split(" ").length;
+var characters = text.length;
+var average = (text.length)/(words).toFixed(1);
+var averageWordLength = Math.floor(average);
+var spaces = text.split(" ");
+
+function superCounter(text) { 
+  //return text.split(" ").length;
+}
+  function superCounter(characters) {
+   //return characters;
+  }
+   function superCounter(averageWordLength) {
+    //return averageWordLength;
+   }
+    function superCounter(spaces) {
+    //return spaces;
+    }
+console.log(text);
+console.log(words+" word(s) " + (characters+  " character(s) " +   
+ (averageWordLength + " char(s) avg word length " + (spaces.length-1+" space(s) "))));
+

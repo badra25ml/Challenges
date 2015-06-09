@@ -1,0 +1,10 @@
+var words = "stash and pop on this level";
+var ar = words.split(" ");
+var result = ar.map(function(word){
+  var reverseWord = word.split('').reverse().join('');
+  return reverseWord === word;
+ });
+
+console.log(ar);
+console.log(result);
+

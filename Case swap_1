@@ -1,0 +1,15 @@
+/ “Life is 10% what happens to you, and 90% of how you REACT to it";
+
+var swapCase = prompt("Please enter a text");
+
+function caseSwap(swapCase){
+  
+  if (swapCase == swapCase.toLocaleLowerCase());
+   return swapCase.toLocaleUpperCase();
+  
+  if (swapCase == swapCase.toLocaleUpperCase())
+  return swapCase.toLocaleLowerCase();
+  
+  
+}
+console.log(caseSwap(swapCase));

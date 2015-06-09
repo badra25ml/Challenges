@@ -1,0 +1,17 @@
+function TripleDouble(num1,num2) { 
+  var first = num1.toString().split("");                      
+  var second = num2.toString().split("");                       
+  var test = "";                                              
+  for (var i = 0; i < first.length; i++){  
+    var sideNum = first[i];                                    
+    if (first[i+1] === sideNum && first[i+2] === sideNum){      
+      test = sideNum;                                                                                              
+    }
+  }
+  for (var l = 0; l < second.length; l++){                       
+    if (second[l] === test && second[l+1] === test){          
+      return 1;                                                 
+    }
+  }
+  return 0;                                                     
+}console.log(TripleDouble(451999277,41177722899));
