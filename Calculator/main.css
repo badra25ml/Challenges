@@ -1,0 +1,47 @@
+div{
+  margin: 0;
+  	padding: 0;
+  	box-sizing: border-box;
+}
+html {
+	height: 100%;
+	background: white;
+  background: radial-gradient(circle, #fff 20%, #ccc);
+
+  }
+  #mytable {
+	width: 250px;
+	height: auto;
+
+	margin: 100px auto;
+	padding: 20px 20px 9px;
+
+  background: #9dd2ea;
+
+}
+
+table {
+	height: 40px;
+	width: 212px;
+
+	float: none;
+
+	padding: 0 10px;
+
+	background: rgba(0, 0, 0, 0.2);
+	border-radius: 3px;
+	box-shadow: inset 0px 4px rgba(0, 0, 0, 0.2);
+
+
+	font-size: 17px;
+	line-height: 40px;
+	color: white;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+	text-align: right;
+	letter-spacing: 1px;
+}
+
+footer{
+  position: absolute;
+  bottom: 0;
+}

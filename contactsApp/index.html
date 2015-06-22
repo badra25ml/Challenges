@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html ng-app="gravatar" ng-controller="gravatarCtrl">
+
+  <head>
+    <script data-require="angular.js@1.4.1" data-semver="1.4.1" src="https://code.angularjs.org/1.4.1/angular.js"></script>
+    <script data-require="jquery@2.1.3" data-semver="2.1.3" src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <input ng-module="search" placeholder="search">
+    <button ng-click="">Submit</button>
+    
+    <div>
+      <img class='avatar' ng-src='{{card.avatar_url}}'>
+      <span ng-dblclick="sear.editing = true">
+          {{ search(sear) }}</span>
+          <span ng-show="sear.editing">
+          <input ng-model="sear.action"
+                 ng-keyup="$event.keyCode === 13 && (sear.editing = false)">
+        </span>
+      <h5>Full name: {{card.name}} {{card.last_name}}</h5>
+      <h5>Email address: {{card.email}}</h5>
+      <h5>Phone number:  {{card.phone_number ? card.phone_number : 'N/A'}}</h5>
+      <input ng-model="contact.fullName" placeholder="Add full name">
+      <input ng-model="contact.email" placeholder="Add email">
+      <input ng-model="contact.phoneNumber" placeholder="Add phone number">
+       <button ng-click="addContact(contact)">Add Contact</button>
+       <h5><table>
+         <tr>
+           <th>Full name</th>
+           <th>Email address</th>
+           <th>Phone number</th> 
+         </tr>
+         <tr ng-repeat='person in contacts track by $index'>
+            <td>{{person.fullName}}</td> 
+         </tr>
+         <tr ng-repeat='person in contacts track by $index'>
+            <td>{{person.email}}</td>
+         </tr>
+         <tr ng-repeat='person  in contacts track by $index'>
+            <td>{{person.phoneNumber}}</td>
+         </tr>
+       </table></h5>
+    </div>
+    
+    
+  </body>
+
+</html>
